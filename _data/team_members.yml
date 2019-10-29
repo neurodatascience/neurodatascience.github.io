@@ -1,87 +1,13 @@
-- name: Bratislav Misic
-  photo: bratislav.jpg
-  info: Assistant Professor
-  email: bratislav.misic@mcgill.ca
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-  education5:
-
-- name: Golia Shafiei
-  photo: golia.jpg
-  info: PhD student
-  email: golia.shafiei@mail.mcgill.ca
-  number_educ: 0
-  education1: 
-
-- name: Laura Suarez
-  photo: laura.jpg
-  info: PhD student
-  email: laura.suarez@mail.mcgill.ca
-  number_educ: 0
-  education1: 
-  education2:
-  education3:
-  education4:
-
-- name: Ross Markello
-  photo: ross.jpg
-  info: PhD student
-  email: ross.markello@mail.mcgill.ca
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-
-- name: Zhen-Qi Liu
-  photo: zhen-qi.jpg
-  info: MSc student
-  email: zhenqi.liu@mail.mcgill.ca
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Vincent Bazinet
-  photo: vince.jpg
-  info: MSc student
-  email: vincent.bazinet@mail.mcgill.ca
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: Bertha Vazquez-Rodriguez
-  photo: bertha.jpg
-  info: Post-Doc
-  email: bertha.vazquezrodriguez@mcgill.ca
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
-
-- name: David Benrimoh
-  photo: david.jpg
-  info: MSc student
-  email: david.benrimoh@mail.mcgill.ca
-  number_educ: 0
-  education1:
-  education2:
-
-- name: Justine Hansen
-  photo: justine.jpg
-  info: BSc student
-  email: justine.hansen@mail.mcgill.ca
-  number_educ: 0
-  education1:
-  education2:
-  education3:
-  education4:
+#- name: Bratislav Misic
+#  photo: bratislav.jpg
+#  info: Assistant Professor
+#  email: bratislav.misic@mcgill.ca
+#  number_educ: 0
+#  education1:
+#  education2:
+#  education3:
+#  education4:
+#  education5:
   
 - name: Kendra Oudyk
   photo: kendra.jpg
