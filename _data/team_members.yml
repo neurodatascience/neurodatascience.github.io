@@ -13,6 +13,19 @@
   photo: kendra.jpg
   info: PhD student
   email: kendra.oudyk@mcgill.ca
+  info: PhD student
+  email: kendra.oudyk@mcgill.ca
+  number_educ: 0
+  education1:
+  education2:
+  education3:
+  education4:
+  education5:
+
+- name: Elizabeth DuPre
+  photo: https://pbs.twimg.com/profile_images/900078648035872768/OVQx8VwQ_400x400.jpg
+  info: PhD student
+  email: elizabeth.dupre@mail.mcgill.ca
   number_educ: 0
   education1:
   education2:
