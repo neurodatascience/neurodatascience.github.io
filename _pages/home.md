@@ -1,12 +1,12 @@
 ---
-title: "NetNeuroLab - Home"
+title: "NeuroDataScience Lab - Home"
 layout: homelay
-excerpt: "NetNeuroLab at MNI."
+excerpt: "NeuroDataScience at MNI."
 sitemap: false
 permalink: /
 ---
 
-We are a dynamic research group at the [Montreal Neurological Institute](https://www.mcgill.ca/neuro). We investigate how the links and interactions among brain areas support cognitive operations, complex behavior and global dynamics.
+We are a research group at the [Montreal Neurological Institute](https://www.mcgill.ca/neuro). Our aim is to produce and promote open and reproducible neuroimaging research, with a focus on neuroimaging data science and neuroinformatics.
 
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" >
@@ -15,10 +15,6 @@ We are a dynamic research group at the [Montreal Neurological Institute](https:/
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
         <li data-target="#carousel" data-slide-to="2"></li>
-        <li data-target="#carousel" data-slide-to="3"></li>
-        <li data-target="#carousel" data-slide-to="4"></li>
-        <li data-target="#carousel" data-slide-to="5"></li>
-        <li data-target="#carousel" data-slide-to="6"></li>
     </ol>
 
     <!-- Items -->
@@ -56,16 +52,16 @@ We are a dynamic research group at the [Montreal Neurological Institute](https:/
   </a>
 </div>
 
+Our laboratory research program has two main axes. First, we are developing methods and tools to best analyse neuroimaging and genetics data in relation to omics, demographic, behavioural or clinical variables using large databases (e.g., the UK Biobank), to better understand brain systems and their relation to brain pathologies. Second, in relation with this first goal, we work to produce or foster more reproducible and replicable science in the field of neuroimaging genetics, and more generally in the life sciences.
 
-Our goal is to quantify the effects of disease on network structure and function. We use neuroimaging (MRI, M/EEG, PET) to map and model patterns of neural connectivity. Our research lies at the intersection of network science, dynamical systems and multivariate statistics. We pursue several research themes, from modeling communication processes on anatomical networks, to statistical models of network architecture and disease propagation (see [Research](research)).
+To this end, we use open science principles, and study how research is performed and published in our domain. We also participate in the construction of tools and infrastructures to more easily disseminate, document, and harmonize datasets and generate re-usable pipelines and analysis methods (see [Research](research)).  
 
-We are located at the Montreal Neurological Institute at McGill University, the birthplace of cognitive neuroscience and home to Penfield, Milner, Jasper and others. We exchange ideas and work with our colleagues in the [McConnell Brain Imaging Centre](https://www.mcgill.ca/bic/).
+We are located at the [Montreal Neurological Institute](https://www.mcgill.ca/neuro) at McGill University, the birthplace of cognitive neuroscience and home to Penfield, Milner, Jasper and others. We exchange ideas and work with our colleagues in the [McConnell Brain Imaging Centre](https://www.mcgill.ca/bic/) and the [Ludmer Centre for Neuroinformatics & Mental Health](http://ludmercentre.ca/).
 
-We are grateful for funding from Canadian Institutes of Health Research ([CIHR](http://www.cihr-irsc.gc.ca/)), the Natural Sciences and Engineering Council of Canada ([NSERC](http://www.nserc-crsng.gc.ca)), the Canada Research Chairs Program ([CRC](http://www.chairs-chaires.gc.ca/)) and the Fonds de Recherché du Quebec-Santé ([FRQS](http://www.frqs.gouv.qc.ca/)).
+We are grateful for funding from Canadian Open Neuroscience Platform ([CONP](https://conp.ca/)), the National Institutes of Health ([NIH](https://www.nih.gov/)), and Healthy Brains for Health Lives ([HBHL](https://www.mcgill.ca/hbhl/)).
 
 <figure class="fourth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/logo_frqs.png" style="width: 140px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/logo_nserc.png" style="width: 130px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/logo_cihr.jpg" style="width: 120px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/logo_crc.jpg" style="width: 110px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/logo_conp.png" style="width: 140px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/logo_nih.png" style="width: 130px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/logo_hbhl.jpg" style="width: 120px">
 </figure>
