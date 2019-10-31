@@ -8,11 +8,39 @@
 #  education3:
 #  education4:
 #  education5:
-  
+
 - name: Kendra Oudyk
   photo: kendra.jpg
   info: PhD student
-  email: kendra.oudyk@mcgill.ca
+  email: kendra.oudyk@mail.mcgill.ca
+  number_educ: 0
+  education1:
+  education2:
+  education3:
+  education4:
+  education5:
+
+- name: Elizabeth DuPre
+  photo: elizabeth.jpg
+  info: PhD student
+  email: elizabeth.dupre@mail.mcgill.ca
+  number_educ: 0
+  education1:
+  education2:
+  education3:
+  education4:
+  education5:
+
+- name: Alexandre Hutton
+  photo: static.png
+  info: Research Assistant
+  email: alexandre.hutton DomainIndicator mail.mcgill.ca
+  number_educ: 0
+
+- name: Alexandre Pérez
+  photo: alexandre.jpg
+  info: Research Trainee
+  email: alexandre.perez2@mail.mcgill.ca
   number_educ: 0
   education1:
   education2:
