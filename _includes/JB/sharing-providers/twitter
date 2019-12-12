@@ -1,0 +1,3 @@
+<!-- Twitter -->
+<i class="fa fa-twitter fa-fw"></i>
+<a class="off" href="https://twitter.com/share?url={{ site.JB.sharing.twitter.via }}&text={{ page.shorttitle }}" data-text="{{ page.title }}" data-via="{{ site.JB.sharing.twitter.via }}" data-related="{{ site.author.twitter }}" target="_blank">tweet</a>

@@ -1,0 +1,238 @@
+<!--
+Branched from Trevor Bedford's source, https://github.com/blab/blotter/blob/master/_layouts/paper.html
+with gratitude.
+-->
+
+{% if page.layout == "poster" %}
+  {% assign type = "Poster" %}
+{% elsif page.layout == "talk" %}
+  {% assign type = "Talk" %}
+{% endif %}
+
+{% if page.image %}
+  {% assign image = page.image %}
+{% else %}
+  {% assign image = "/assets/images/placeholder.png" %}
+{% endif %}
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="media">
+			<img class="pull-left pad-right media-object paper-image" src="{{ image }}" style="border:1px solid #021a40;">
+		</div>
+    <div class="bigspacer"></div>
+    <div class="glyphbox note"> <!-- DAD: what is this class? -->
+      {% if page.pdf or page.fulltext or page.slides or page.video %}
+        <div class="smallhead subtle">
+          {{ type }}
+        </div>
+        <div class="pad-left note">
+          <div class="smallspacer"></div>
+          <!-- for posters -->
+          {% if page.pdf %}
+            <i class="fa fa-file-pdf-o fa-fw"></i>
+            <a class="off" href="{{ page.pdf }}">PDF</a>
+            <br/>
+          {% endif %}
+
+          {% if page.fulltext %}
+            <i class="fa fa-external-link fa-fw"></i>
+            <a class="off" href="{{ page.fulltext }}">Link</a>
+          {% endif %}
+
+          <!-- for talks -->
+          {% if page.slides %}
+            <i class="fa fa-file-powerpoint-o"></i>
+            <a class="off" href="{{ page.slides }}">Slides</a>
+            <br/>
+          {% endif %}
+
+          {% if page.video %}
+            <i class="fa fa-file-video-o"></i>
+            <a class="off" href="{{ page.video }}">Video</a>
+            <br/>
+          {% endif %}
+        </div>
+        <div class="bigspacer"></div>
+      {% endif %}
+
+      {% if page.doi %}
+				<div class="smallhead subtle">
+					DOI
+				</div>
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					<i class="ai ai-doi ai-fw"></i>
+					<a class="off" href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
+				</div>
+				<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.github %}
+				<div class="smallhead subtle">
+					Source Code
+				</div>
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					{% for repo in page.github %}
+						<i class="fa fa-github-alt fa-fw"></i>
+						<a class="off" href="{{ repo }}">{{ repo | remove: 'https://github.com/' }}</a>
+						<div class="smallspacer"></div>
+					{% endfor %}
+				</div>
+				<div class="bigspacer"></div>
+			{% endif %}
+
+			{% if page.openneuro or page.neurovault or page.figshare %}
+				<div class="smallhead subtle">
+					Data
+				</div>
+
+				<div class="pad-left note">
+					<div class="smallspacer"></div>
+					{% for dset in page.openneuro %}
+						<i class="fa fa-database fa-fw"></i>
+						<a class="off" href="https://openneuro.org/datasets/{{ dset }}">OpenNeuro: {{ dset }}</a>
+						<div class="smallspacer"></div>
+					{% endfor %}
+
+					{% for coll in page.neurovault %}
+						<i class="fa fa-database fa-fw"></i>
+						<a class="off" href="https://neurovault.org/collections/{{ coll }}">NeuroVault: {{ coll }}</a>
+						<div class="smallspacer"></div>
+					{% endfor %}
+
+          {% for coll in page.figshare %}
+  					<i class="ai ai-figshare ai-fw"></i>
+  					<a class="off" href="{{ coll }}">figshare</a>
+  					<div class="smallspacer"></div>
+  				{% endfor %}
+				</div>
+				<div class="bigspacer"></div>
+			{% endif %}
+
+      {% if page.projects %}
+        <div class="smallhead subtle">
+          Projects
+        </div>
+        {% for project in site.categories.projects %}
+          {% if page.projects contains project.handle %}
+            <div class="pad-left note">
+              <div class="smallspacer"></div>
+              <i class="fa fa-cube fa-fw"></i>
+              <a href="{{ project.url }}" class="off">{{ project.handle }}</a>
+            </div>
+          {% endif %}
+        {% endfor %}
+        {% for project in site.categories.software %}
+          {% if page.projects contains project.handle %}
+            <div class="pad-left note">
+              <div class="smallspacer"></div>
+              <i class="fa fa-cube fa-fw"></i>
+              <a href="{{ project.url }}" class="off">{{ project.handle }}</a>
+            </div>
+          {% endif %}
+        {% endfor %}
+        <div class="bigspacer"></div>
+      {% endif %}
+
+      {% if page.osf or page.f1000 %}
+        <div class="smallhead subtle">
+          Additional Resources
+        </div>
+        {% if page.osf %}
+          <div class="pad-left note">
+            <div class="smallspacer"></div>
+            <i class="ai ai-osf ai-fw"></i>
+            <a class="off" href="{{ page.osf }}">Open Science Framework</a>
+          </div>
+        {% endif %}
+        {% if page.osf and page.f1000 %}
+          <div class="smallspacer"></div>
+        {% endif %}
+        {% if page.f1000 %}
+          <div class="pad-left note">
+            <div class="smallspacer"></div>
+            <i class="fa fa-folder-open-o fa-fw"></i>
+            <a class="off" href="{{ page.f1000 }}">F1000</a>
+          </div>
+        {% endif %}
+        <div class="bigspacer"></div>
+      {% endif %}
+
+      <div class="smallhead subtle">
+        Share
+      </div>
+        <div class="pad-left note">
+          <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
+          <div class="post-sharing">
+           {% include JB/sharing %}
+          </div>
+        </div>
+    </div>
+	</div>
+
+	<div class="col-md-9">
+		<div class="media-body titlebox">
+			<div class="title media-heading">
+				{{ page.title }}
+			</div>
+			<p>
+			<div class="smallhead">
+				{% assign split_authors = page.authors | split: ", " %}
+				{% for author in split_authors %}
+				    {% assign author_in_lab = false %}
+				    {% for member in site.categories.team %}
+                {% for science_name in member.science_names %}
+    						    {% if author == science_name %}
+        								{% assign author_in_lab = true %}
+    						        <a class="off" href="{{ member.url }}">{{ science_name }}</a>,
+						        {% endif %}
+                {% endfor %}
+				    {% endfor %}
+            {% for collab in site.data.collaborators %}
+                {% if author == collab.science_name %}
+                    {% assign author_in_lab = true %}
+                    <a class="off" href="{{ collab.url }}">{{ collab.science_name }}</a>,
+                {% endif %}
+            {% endfor %}
+					  {% if author_in_lab == false %}
+					      {{ author }},
+					  {% endif %}
+				{% endfor %}
+				<span class="journal">
+				{{ page.conference }}
+				</span>
+				({{ page.year }}).
+			</div>
+      <hr/>
+      <div class="post">
+        {{ content }}
+      </div>
+		</div>
+    <!-- comment out unless we want the categories and tags
+    {% unless page.categories == empty %}
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+    </ul>
+    {% endunless %}
+
+    {% unless page.tags == empty %}
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+    </ul>
+    {% endunless %}
+
+    <hr>
+    {% include JB/comments %}
+    -->
+	</div>
+</div>
+
+<div class="bigspacer"></div>

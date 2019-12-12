@@ -1,0 +1,303 @@
+
+{% assign member = page %}
+
+{% if member.image %}
+	{% assign image = member.image %}
+{% else %}
+	{% assign image = "/assets/images/placeholder-user.png" %}
+{% endif %}
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="media">
+			<img class="pull-left pad-right big-member-photo" src="{{ image }}" style="width:250px; height:auto; padding:1px; border:1px solid #021a40;">
+		</div>
+		<div class="bigspacer"></div>
+
+		{% if member.email %}
+			<div class="smallhead">
+				{% assign emailarray = member.email | split: '@' %}
+				<i class="fa fa-inbox fa-fw"></i>
+				{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.site %}
+			<div class="smallhead">
+				<i class="fa fa-user fa-fw"></i>
+				<a class="social site" href="{{ member.site }}">
+					Personal Site
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.cv %}
+			<div class="smallhead">
+				<i class="ai ai-cv"></i>
+				{% capture cv_url %}
+					{% include /functions/get_drive_url.html url=member.cv %}
+				{% endcapture %}
+				<a class="social cv" href="{{ cv_url }}">
+					Curriculum Vitae
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.orcid %}
+			<div class="smallhead">
+				<i class="ai ai-orcid"></i>
+				<a class="social orcid" href="https://orcid.org/{{ member.orcid }}">
+					{{ member.orcid }}
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.github %}
+			<div class="smallhead">
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="social github" href="https://github.com/{{ member.github }}">
+					{{ member.github }}
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.twitter %}
+			<div class="smallhead">
+				<i class="fa fa-twitter fa-fw"></i>
+				<a class="social twitter" href="https://twitter.com/{{ member.twitter }}">
+					@{{ member.twitter }}
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.scholar %}
+			<div class="smallhead">
+				<i class="ai ai-google-scholar"></i>
+				<a class="social scholar" href="https://scholar.google.com/citations?user={{ member.scholar }}">
+					Google Scholar
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.osf %}
+			<div class="smallhead">
+				<i class="ai ai-osf"></i>
+				<a class="social osf" href="https://osf.io/{{ member.osf }}">
+					Open Science Framework
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.researchgate %}
+			<div class="smallhead">
+				<i class="ai ai-researchgate"></i>
+				<a class="social researchgate" href="https://www.researchgate.net/profile/{{ member.researchgate }}">
+					ResearchGate
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.impactstory %}
+			<div class="smallhead">
+				<i class="ai ai-impactstory"></i>
+				<a class="social impactstory" href="https://profiles.impactstory.org/u/{{ member.impactstory }}">
+					ImpactStory
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if member.publons %}
+			<div class="smallhead">
+				<i class="ai ai-publons"></i>
+				<a class="social publons" href="https://publons.com/author/{{ member.publons }}">
+					Publons
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		{% endif %}
+  </div>
+	<div class="col-md-9">
+		<div class="pull-left pad-right media-body titlebox">
+			<div class="title media-heading">
+				{{ member.title }}
+			</div>
+			<div class="smallhead">
+				{{ member.position }}
+			</div>
+			<div class="smallhead">
+				{{ member.department }}
+			</div>
+			<div class="bigspacer"></div>
+			<div class="bigspacer"></div>
+			<div class="post">
+				{{ content }}
+			</div>
+
+			<!-- Show projects, then papers, then talks, then posters -->
+			{% for project in site.categories.projects %}
+				{% if project.contributors contains member.handle %}
+					{% assign projectsq = true %}
+				{% endif %}
+			{% endfor %}
+
+			{% for blog in site.categories.blog %}
+				{% if blog.author contains member.handle %}
+					{% assign blogsq = true %}
+				{% endif %}
+			{% endfor %}
+
+			{% assign lastname = member.title | split: ' ' | last %}
+			{% for paper in site.categories.papers %}
+				{% assign split_authors = paper.authors | split: ", " %}
+				{% for author in split_authors %}
+					{% for science_name in member.science_names %}
+						{% if author == science_name %}
+							{% assign papersq = true %}
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+			{% endfor %}
+
+			{% for pres in site.categories.talks %}
+				{% assign split_authors = pres.authors | split: ", " %}
+				{% for science_name in member.science_names %}
+					{% if split_authors[0] == science_name %}
+						{% assign talksq = true %}
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+
+			{% for poster in site.categories.posters %}
+				{% assign split_authors = poster.authors | split: ", " %}
+				{% for author in split_authors %}
+					{% for science_name in member.science_names %}
+						{% if author == science_name %}
+							{% assign postersq = true %}
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+			{% endfor %}
+
+			<!-- Add section divider -->
+			{% if projectsq or papersq or talksq or postersq %}
+			  <hr/>
+			{% endif %}
+
+			<!-- Projects -->
+			{% if projectsq == true %}
+				<div class="bigspacer"></div>
+				<div class="head">Research</div>
+				<div class="spacer"></div>
+				{% for project in site.categories.projects %}
+					{% if project.contributors contains member.handle %}
+						  <div class="pad-left note"><p>
+							{% if project.tags contains "software" %}
+								<a href="{{ project.url }}" class="off">[SOFTWARE] {{ project.title }}</a>
+							{% else %}
+								<a href="{{ project.url }}" class="off">{{ project.title }}</a>
+							{% endif %}
+						  </p></div>
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+
+			<!-- Blog posts -->
+			{% if blogsq == true %}
+				<div class="bigspacer"></div>
+				<div class="head">Blog posts</div>
+				<div class="spacer"></div>
+				{% for blog in site.categories.blog %}
+					{% if blog.author contains member.handle %}
+					  <div class="pad-left note"><p>
+						<a href="{{ blog.url }}" class="off">{{ blog.title }}</a>
+						<br/>
+						{{ blog.date | date_to_string }}
+					  </p></div>
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+
+			<!-- Papers -->
+			{% if papersq == true %}
+				<div class="bigspacer"></div>
+				<div class="head">Papers</div>
+				<div class="spacer"></div>
+				{% for paper in site.categories.papers %}
+					{% assign split_authors = paper.authors | split: ", " %}
+					{% for author in split_authors %}
+						{% for science_name in member.science_names %}
+							{% if author == science_name %}
+							  <div class="pad-left note"><p>
+									{% if paper.embargo %}
+									  {{ paper.title }}
+									{% else %}
+									  {% if paper.tags contains "preprint" and paper.is_published == false %}
+				              <a href="{{ paper.url }}" class="off">[PREPRINT] {{ paper.title }}</a>
+				            {% elsif paper.tags contains "chapter" %}
+				              <a href="{{ paper.url }}" class="off">[CHAPTER] {{ paper.title }}</a>
+										{% elsif paper.tags contains "correspondence" %}
+					              <a href="{{ paper.url }}" class="off">[CORRESPONDENCE] {{ paper.title }}</a>
+				            {% else %}
+				              <a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
+				            {% endif %}
+									{% endif %}
+							  </p></div>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+			{% endif %}
+
+			<!-- Only show talks on first author's page -->
+			{% if talksq == true %}
+				<div class="bigspacer"></div>
+				<div class="head">Talks</div>
+				<div class="spacer"></div>
+				{% for pres in site.categories.talks %}
+				  {% assign split_authors = pres.authors | split: ", " %}
+					{% for science_name in member.science_names %}
+						{% if split_authors[0] == science_name %}
+						  <div class="pad-left note"><p>
+							<a href="{{ pres.url }}" class="off">{{ pres.title }}</a>
+						  </p></div>
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+			{% endif %}
+
+			<!-- Only show posters on first author's page -->
+			<!-- Disabled for now -->
+			{% if postersq == true %}
+				<div class="bigspacer"></div>
+				<div class="head">Posters</div>
+				<div class="spacer"></div>
+				{% for poster in site.categories.posters %}
+					{% assign split_authors = poster.authors | split: ", " %}
+					{% for author in split_authors %}
+						{% for science_name in member.science_names %}
+							{% if author == science_name %}
+							  <div class="pad-left note"><p>
+								<a href="{{ poster.url }}" class="off">{{ poster.title }}</a>
+								</p></div>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
