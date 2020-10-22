@@ -1,161 +1,100 @@
-
-prof-a:
-    display_name: "Prof A"
+JB:
+    display_name: "Jean-Baptiste Poline"
+    webpage: "https://www.mcgill.ca/neuro/jean-baptiste-poline-phd"
+    github: jbpoline
     role: faculty
+    image: /img/people/jb.jpg
+    bio: Principal Investigator
 
-prof-b:
-    display_name: "Prof B"
+Gael:
+    display_name: "Gaël Varoquaux"
+    webpage: "http://gael-varoquaux.info/"
+    github: GaelVaroquaux
     role: faculty
+    image: /img/people/gael.jpg
+    bio: Visiting Professor (Research Director, Inria)
 
-prof-c:
-    display_name: "Prof C"
-    role: faculty
-
-profx:
-    display_name: "Professor X"
-    webpage: "http://en.wikipedia.org/wiki/Professor_X"
-    github: profx
-    role: faculty
-    image: /img/people/prof-x.png
-    bio: Professor
-
-scott:
-    display_name: "Scott Summers"
-    webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
+Lex:
+    display_name: "Alexandre Hutton"
+    webpage: "https://github.com/AlexandreHutton"
+    github: AlexandreHutton
     role: staff
-    image: /img/people/scott.png
-    bio: aka Cyclops
+    image: /img/people/lex.jpg
+    bio: Research Assistant
 
-wolverine:
-    display_name: "Wolverine"
-    webpage: "http://en.wikipedia.org/wiki/Wolverine_%28comics%29"
-    github: wolverine
+Adam:
+    display_name: "Adam Trefonides"
+    webpage:
+    github:
+    role: staff
+    image: /img/people/adam.png
+    bio: Research Software Developer
+
+Peer:
+    display_name: "Peer Herholz"
+    webpage: "https://peerherholz.github.io/"
+    github: https://github.com/peerherholz
     role: postdoc
+    image: /img/people/peer.png
+    bio: Postdoctoral researcher
 
-storm:
-    display_name: "Storm"
-    webpage: "http://en.wikipedia.org/wiki/Storm_%28Marvel_Comics%29"
+Vincent:
+    display_name: "Qing Wang (Vincent)"
+    webpage: "https://github.com/Vincent-wq"
+    github: Vincent-wq
+    role: postdoc
+    image: /img/people/vincent.jpg
+    bio: Postdoctoral researcher
+
+Jerome:
+    display_name: "Jérôme Dockès"
+    webpage: "https://jeromedockes.github.io/"
+    github: jeromedockes
+    role: postdoc
+    image: /img/people/jerome.jpg
+    bio: Postdoctoral researcher
+
+Kendra:
+    display_name: "Kendra Oudyk"
+    webpage: "https://koudyk.github.io/"
+    github: koudyk
     role: grad
-    image: /img/people/storm.png
+    image: /img/people/kendra.jpg
+    bio: PhD student
 
-grad-a:
-    display_name: "Grad A"
+Elizabeth:
+    display_name: "Elizabeth DuPre"
+    webpage: "https://elizabeth-dupre.com/"
+    github: emdupre
     role: grad
+    image: /img/people/elizabeth.jpg
+    bio: PhD student
 
-grad-b:
-    display_name: "Graduate Student B With Long Name"
+Irene:
+    display_name: "Ting Zhang"
+    webpage:
+    github:
     role: grad
+    image: /img/people/ducky.jpg
+    bio: PhD student
 
-grad-c:
-    display_name: "Grad C"
+Jacob:
+    display_name: "Jacob Sanz-Robinson"
+    webpage: "https://jacobsanz97.github.io/"
+    github: jacobsanz97
     role: grad
+    image: /img/people/jacob.jpg
+    bio: MSc student
 
-grad-d:
-    display_name: "Grad D"
-    role: grad
-
-grad-e:
-    display_name: "Grad E"
-    role: grad
-
-grad-f:
-    display_name: "Grad F"
-    role: grad
-
-grad-g:
-    display_name: "Grad G"
-    role: grad
-
-grad-h:
-    display_name: "Grad H"
-    role: grad
-
-grad-i:
-    display_name: "Grad I"
-    role: grad
-
-alum-a:
-    display_name: "Alum A"
+Alex:
+    display_name: "Alexandre Pérez"
     role: alum
-    bio: "Ph.D., 2013. Now at Microsoft Research."
+    bio: "Research Trainee"
 
-alum-b:
-    display_name: "Alum B With Way Longer Name"
-    role: alum
-
-alum-c:
-    display_name: "Alum C"
-    role: alum
-    webpage: "https://www.google.com"
-
-alum-d:
-    display_name: "Alum D"
-    role: alum
-
-alum-e:
-    display_name: "Alum E"
-    role: alum
-
-alum-f:
-    display_name: "Alum F"
-    role: alum
-
-alum-g:
-    display_name: "Alum G"
-    role: alum
-
-alum-h:
-    display_name: "Alum H"
-    role: alum
-
-alum-i:
-    display_name: "Alum I"
-    role: alum
-
-collab-a:
-    display_name: "Collaborator A"
-    role: collab
-
-collab-b:
-    display_name: "Collaborator B With Long Name"
-    role: collab
-
-collab-c:
-    display_name: "Collaborator C"
-    role: collab
-
-collab-d:
-    display_name: "Collaborator D"
-    role: collab
-
-collab-e:
-    display_name: "Collaborator E"
-    role: collab
-
-ugrad-a:
-    display_name: "Ugrad A"
+Lukas:
+    display_name: "Lukas Shannon"
     role: ugrad
 
-ugrad-b:
-    display_name: "Ugrad Student B With Long Name"
+Kate:
+    display_name: "Kate Kim"
     role: ugrad
-
-ugrad-c:
-    display_name: "Ugrad C"
-    role: ugrad
-
-ugrad-d:
-    display_name: "Ugrad D"
-    role: ugrad
-
-ugrad-e:
-    display_name: "Ugrad E"
-    role: ugrad
-
-ugrad-alum-a:
-    display_name: "Past Ugrad A"
-    role: ugrad-alum
-
-ugrad-alum-b:
-    display_name: "Past Ugrad Student B With Long Name"
-    role: ugrad-alum
