@@ -6,7 +6,7 @@ title: Lab Wiki
 
 ## Checklist for newcomers
 
--Get added to our Slack: [hyperaligned_neuroinformatics](hyper-neuro.slack.com).
+-Get added to our Slack: [hyperaligned_neuroinformatics](https://hyper-neuro.slack.com).
 
 -Get added to our [GitHub repository](https://github.com/neurodatascience) and add your project.
 
