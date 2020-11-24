@@ -42,7 +42,7 @@ navigation:
   - title: About
     link: /about.html
   - title: People
-    link: /people
+    link: /#people
   - title: Research
     link: /research.html
   - title: Publications
