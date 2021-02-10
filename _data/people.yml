@@ -93,11 +93,13 @@ Alex:
 
 Lukas:
     display_name: "Lukas Shannon"
-    role: ugrad
+    role: alum
+    bio: Undergraduate Researcher
 
 Kate:
     display_name: "Kate Kim"
     role: ugrad
+    bio: Undergraduate Researcher
     
 Nikhil:
     display_name: "Nikhil Bhagwat"

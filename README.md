@@ -1,3 +1,15 @@
+Adding Yourself to the Web Site
+================================
+* Create a fork of the website repository.
+* Clone the forked repository on your machine.
+* Switch branch (checkout) to the gh-pages branch.
+* Add your picture to the /img/people/ folder
+* Open the _data/people.yml file, and add an entry for yourself following the existing structure.
+* If you wish to add your project description to the website, go to the /_projects folder, and create a new .md file following the structure of the other .md files there.
+* Add, commit, and push the changes to your fork.
+* Create a Pull Request so your changes can be accepted in the main repository.
+
+
 Research Group Web Site Template
 ================================
 
