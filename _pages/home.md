@@ -56,7 +56,7 @@ We are a research group at the [Montreal Neurological Institute](https://www.mcg
 
 Our laboratory research program has two main axes. First, we are developing methods and tools to best analyse neuroimaging and genetics data in relation to omics, demographic, behavioural or clinical variables using large databases (e.g., the UK Biobank), to better understand brain systems and their relation to brain pathologies. Second, in relation with this first goal, we work to produce or foster more reproducible and replicable science in the field of neuroimaging genetics, and more generally in the life sciences.
 
-To this end, we use open science principles, and study how research is performed and published in our domain. We also participate in the construction of tools and infrastructures to more easily disseminate, document, and harmonize datasets and generate re-usable pipelines and analysis methods (see [Research](research)).  
+To this end, we use open and reproducible science principles, and study how research is performed and published in our domain. We also participate in the construction of tools and infrastructures to more easily disseminate, document, and harmonize datasets and generate re-usable pipelines and analysis methods (see [Research](research)).  
 
 We are located at the [Montreal Neurological Institute](https://www.mcgill.ca/neuro) at McGill University, the birthplace of cognitive neuroscience and home to Penfield, Milner, Jasper and others. We exchange ideas and work with our colleagues in the [McConnell Brain Imaging Centre](https://www.mcgill.ca/bic/) and the [Ludmer Centre for Neuroinformatics & Mental Health](http://ludmercentre.ca/).
 
