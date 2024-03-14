@@ -149,67 +149,67 @@ svg {
 
 .glyphicon.fa {
     font-family: FontAwesome;
-  }
+    }
 .header-back {
     height: 470px;
     width: 100%;
     background-position: 50% 0;
     background-repeat:  no-repeat;
     background-size: cover;
-  }
+    }
 .carousel {
     height: 470px;
-  }
-  .carousel-caption {
+    }
+.carousel-caption {
     z-index: 10;
-  }
-  .carousel .item {
+}
+.carousel .item {
     height: 470px;
     background-color: #777;
-  }
-  .carousel-inner > .item > img {
+}
+.carousel-inner > .item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 470px;
-  }
-  .carousel-fade {
+}
+.carousel-fade {
     .carousel-inner {
-      .item {
-        opacity: 0;
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-      }
-      .active {
-        opacity: 1;
-        &.left, &.right {
-          left: 0;
-          opacity: 0;
-          z-index: 1;
+        .item {
+            opacity: 0;
+            -webkit-transition-property: opacity;
+            transition-property: opacity;
         }
-      }
-      .next.left, .prev.right {
-        opacity: 1;
-      }
+        .active {
+            opacity: 1;
+            &.left, &.right {
+                left: 0;
+                opacity: 0;
+                z-index: 1;
+            }
+        }
+        .next.left, .prev.right {
+            opacity: 1;
+        }
     }
     .carousel-control {
-      z-index: 2;
+        z-index: 2;
     }
-  }
-  .carousel-control {
+}
+.carousel-control {
     &.left, &.right {
-      background: 0 0;
+        background: 0 0;
     }
     width: 6%;
-  }
-  .carousel-inner {
+}
+.carousel-inner {
     .container {
-      position: relative;
+        position: relative;
     }
     overflow: visible;
-  }
-  .carousel-caption {
+}
+.carousel-caption {
     position: absolute;
     top: 100px;
     left: 0;
@@ -217,23 +217,23 @@ svg {
     right: auto;
     text-align: left;
     &.blank {
-      top: 140px;
+        top: 140px;
     }
-  }
-  .carousel-image {
+}
+.carousel-image {
     position: absolute;
     right: 10px;
     top: 150px;
-  }
-  .carousel-caption {
+}
+.carousel-caption {
     h1 {
-      font-weight: 700;
-      font-size: 38px;
-      text-shadow: none;
-      letter-spacing: -1.5px;
+        font-weight: 700;
+        font-size: 38px;
+        text-shadow: none;
+        letter-spacing: -1.5px;
     }
     p {
-      font-weight: 700;
-      text-shadow: none;
+        font-weight: 700;
+        text-shadow: none;
     }
-  }
+}
