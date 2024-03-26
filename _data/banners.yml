@@ -1,0 +1,15 @@
+---
+# carousel banners section
+# Add items for each banner image in the carousel
+#
+# Images are expected to be located in `img/banners`.
+-   src: lab-group-2023.jpeg
+    title: foo
+-   src: labGroup_small.png
+    title: foo
+-   src: lab_ohbm2023_duck.jpg
+    title: foo
+-   src: labpic2.jpg
+    title: foo
+-   src: labpic3.png
+    title: foo
