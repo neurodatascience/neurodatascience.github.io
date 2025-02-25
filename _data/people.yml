@@ -35,12 +35,28 @@ Arman:
     image: /img/people/arman.jpg
     bio: Research Software Developer
 
+## ---------------- COLLAB ----------------
+
 Remi:
     display_name: Remi Gau
     webpage: https://remi-gau.github.io/
     github: Remi-Gau
     role: collab
     image: /img/people/remi.jpg
+    bio: Close Collaborator
+
+Yarik:
+    display_name: Yaroslav Halchenko
+    webpage: https://centerforopenneuroscience.org/whoweare
+    github: yarikoptic
+    role: collab
+    bio: Close Collaborator
+
+Chris:
+    display_name: Chris Markiewicz
+    webpage: https://effigies.gitlab.io/
+    github: effigies
+    role: collab
     bio: Close Collaborator
 
 ## ---------------- POST-DOC ----------------
