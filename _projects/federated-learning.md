@@ -1,6 +1,6 @@
 ---
 title: Benchmarking federated learning approaches against siloed and mega-analysis regimes
-# subtitle: 
+# subtitle:
 status: active
 image: img/projects/fl_overview.png
 layout: project
@@ -9,9 +9,10 @@ people:
   - Nikhil
 ---
 
-Although neuroimaging is seeing a growing number of datasets, the international adoption of strong data privacy frameworks ([Marelli & Testa, 2018](https://doi.org/10.1126/science.aar5419)) has led to many of these datasets remaining in so-called “silos”. When data cannot readily be shared, it becomes imperative to develop distributed data processing tools and federated analysis methods to enable large-scale multi-site studies. 
+Although neuroimaging is seeing a growing number of datasets, the international adoption of strong data privacy frameworks ([Marelli & Testa, 2018](https://doi.org/10.1126/science.aar5419)) has led to many of these datasets remaining in so-called “silos”. When data cannot readily be shared, it becomes imperative to develop distributed data processing tools and federated analysis methods to enable large-scale multi-site studies.
 
 In this project, we compare a simple federated analysis setup (i.e. sharing only fitted model parameters) with two traditional experimental setups:
+
 - Siloed analysis (no sharing of data or model parameters)
 - Mega-analysis (sharing data)
 

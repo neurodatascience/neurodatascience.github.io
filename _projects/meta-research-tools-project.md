@@ -45,6 +45,6 @@ The left column of the figure shows the tools we have created to assist with the
 
 [4] Dockès, J., Poldrack, R. A., Primet, R., Gözükan, H., Yarkoni, T., Suchanek, F., ... & Varoquaux, G. (2020). NeuroQuery, comprehensive meta-analysis of human brain mapping. Elife, 9, e53385.
 
-
 # Projects
+
 - [litmining](https://litmining.github.io/) ecosystem: A set of accessible, scalable, and reliable tools for mining the biomedical literature.a-analysis of human brain mapping. Elife, 9, e53385.

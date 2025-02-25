@@ -8,12 +8,12 @@ people:
 
 ### Overview
 
-Neuropsychiatric signs and symptoms in Parkinson's Disease (PD) are common and can be as disabling and as clinically relevant as motor symptoms. The prevalence and severity of these neuropsychiatric signs and symptoms often increase over time and can be placed in the broad categories of affect, perception and thinking, and motivation. Correlates and risk factors for developing neuropsychiatric signs and symptoms are vast and research shows large interindividual variation. What is more, administering diagnostic tools for neuropsychiatric symptoms is not common clinical practice unless the patient does already present clear signs of neuropsychiatric distress which is often at a point where interventions are less effective. What is (almost) common clinical practice, though, is brain imaging assessments such as MRI scans. 
+Neuropsychiatric signs and symptoms in Parkinson's Disease (PD) are common and can be as disabling and as clinically relevant as motor symptoms. The prevalence and severity of these neuropsychiatric signs and symptoms often increase over time and can be placed in the broad categories of affect, perception and thinking, and motivation. Correlates and risk factors for developing neuropsychiatric signs and symptoms are vast and research shows large interindividual variation. What is more, administering diagnostic tools for neuropsychiatric symptoms is not common clinical practice unless the patient does already present clear signs of neuropsychiatric distress which is often at a point where interventions are less effective. What is (almost) common clinical practice, though, is brain imaging assessments such as MRI scans.
 
-The main purpose of this project is to find a way to accurately and reliably predict neuropsychiatric symptoms in PD patients using brain imaging data in order 
+The main purpose of this project is to find a way to accurately and reliably predict neuropsychiatric symptoms in PD patients using brain imaging data in order
 
 1. to facilitate diagnostics of neuropsychiatric symptoms in PD for early intervention selection
-2. while not adding more burden to the clinicians daily practice. 
+2. while not adding more burden to the clinicians daily practice.
 
 ### Methods
 
@@ -23,6 +23,6 @@ The pre-estimated normative model by [Rutherford et al.](https://doi.org/10.7554
 
 1. stratify interindividual differences in cortical thickness data between PD patients
 2. explain interindividual differences in development and manifestation of neuropsychiatric symptoms
-3. and increase the performance of prediction models for neuropsychiatric symptoms in PD patients using the Z-predict scores from the normative model instead of the raw cortical thickness values. 
+3. and increase the performance of prediction models for neuropsychiatric symptoms in PD patients using the Z-predict scores from the normative model instead of the raw cortical thickness values.
 
-Important first steps in this project will be the gathering of available PD-brain imaging datasets with available neuropsychiatric assessment data as well as the harmonization of those assessments, since symptoms are measured by different inventories across datasets. For this, we collaborate closely with the [ENIGMA-PD](https://enigma.ini.usc.edu/ongoing/enigma-parkinsons/) Neuropsychiatry project, lead by [Eva van Heese](https://scholar.google.com/citations?user=JhpThRUAAAAJ&hl=en) and [Odile van den Heuvel](https://www.amsterdamumc.org/en/research/researchers/odile-van-den-heuvel.htm). 
+Important first steps in this project will be the gathering of available PD-brain imaging datasets with available neuropsychiatric assessment data as well as the harmonization of those assessments, since symptoms are measured by different inventories across datasets. For this, we collaborate closely with the [ENIGMA-PD](https://enigma.ini.usc.edu/ongoing/enigma-parkinsons/) Neuropsychiatry project, lead by [Eva van Heese](https://scholar.google.com/citations?user=JhpThRUAAAAJ&hl=en) and [Odile van den Heuvel](https://www.amsterdamumc.org/en/research/researchers/odile-van-den-heuvel.htm).
