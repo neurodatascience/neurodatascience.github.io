@@ -26,6 +26,7 @@ Nipoppy is a lightweight framework for standardized organization and processing 
 The framework consists of the following:
 
 1. A **standardized workflow process (i.e., protocol)** covering the following:
+
    - Curation and organization of MRI and tabular data
      - E.g., conversion of DICOM data to BIDS
    - Standardized processing of imaging data using existing or custom pipelines

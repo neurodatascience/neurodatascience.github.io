@@ -14,12 +14,11 @@ people:
 
 ### Overview
 
-The ENIGMA Parkinson’s Disease (PD) working group (WG) is the largest international effort to advance our understanding of this progressive, neurodegenerative disease by combining data and analyses across 44 participating research centers spanning Europe, Asia, Africa, Oceania, and the Americas. The WG is led by the main applicant from Amsterdam UMC as part of the ENIGMA consortium that embraces a collaborative and inclusive approach to neuroscience, bringing together researchers from around the world - including those from lower-resourced countries. 
+The ENIGMA Parkinson’s Disease (PD) working group (WG) is the largest international effort to advance our understanding of this progressive, neurodegenerative disease by combining data and analyses across 44 participating research centers spanning Europe, Asia, Africa, Oceania, and the Americas. The WG is led by the main applicant from Amsterdam UMC as part of the ENIGMA consortium that embraces a collaborative and inclusive approach to neuroscience, bringing together researchers from around the world - including those from lower-resourced countries.
 
-Given the distributed setup of ENIGMA sites and datasets, managing and maintaining consistent data curation, processing practices across the sites is a huge challennge. The ongoing collaboration between the ENIGMA-PD team and ORIGAMI lab has focussed on addressing these challenges by adopting the [Nipoppy](https://nipoppy.readthedocs.io/en/latest/) and [Neurobagel](https://neurobagel.org/) tools to streamline data curation, processing, and analysis workflows. This has signficantly simplified tracking of data availability, addition of new pipelines and upgrading of existing pipelines. 
+Given the distributed setup of ENIGMA sites and datasets, managing and maintaining consistent data curation, processing practices across the sites is a huge challennge. The ongoing collaboration between the ENIGMA-PD team and ORIGAMI lab has focussed on addressing these challenges by adopting the [Nipoppy](https://nipoppy.readthedocs.io/en/latest/) and [Neurobagel](https://neurobagel.org/) tools to streamline data curation, processing, and analysis workflows. This has significantly simplified tracking of data availability, addition of new pipelines and upgrading of existing pipelines.
 
-See [ENIGMA-PD upgrade project](https://github.com/ENIGMA-PD/FS7/tree/main?tab=readme-ov-file#running-freesurfer-7) for latest update. 
-
+See [ENIGMA-PD upgrade project](https://github.com/ENIGMA-PD/FS7/tree/main?tab=readme-ov-file#running-freesurfer-7) for latest update.
 
 ### Current ENIGMA-PD Sites with Poppy and Bagels
 
