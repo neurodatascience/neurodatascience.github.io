@@ -29,7 +29,7 @@ The framework consists of the following:
    - Curation and organization of MRI and tabular data
      - E.g., conversion of DICOM data to BIDS
    - Standardized processing of imaging data using existing or custom pipelines
-     - E.g., [fMRIPrep](https://fmriprep.org/en/stable/), [MRIQC](https://mriqc.readthedocs.io/en/latest/)
+     - E.g., [fMRIPrep](https://fmriprep.org/en/stable/), [MRIQC](https://mriqc.readthedocs.io/en/stable/)
      - The [Boutiques framework](https://boutiques.github.io/) is used to flexibly execute and add new pipelines
    - Tracking of availability status for raw and processed data
      - We also develop an interactive [dashboard](https://digest.neurobagel.org/) for easy visualization of tracker results
