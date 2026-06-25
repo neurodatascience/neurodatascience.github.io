@@ -35,6 +35,13 @@ Arman:
     image: /img/people/arman.jpg
     bio: Research Software Developer
 
+Achille:
+    display_name: Achille Vigneault   
+    webpage: https://github.com/Achille-V
+    github: Achille-V
+    role: staff
+    bio: Research Assistant
+
 ## ---------------- COLLAB ----------------
 
 Remi:
