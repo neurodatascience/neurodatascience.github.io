@@ -13,6 +13,7 @@ title: Lab Wiki
   - Add a picture of yourself to the `img/people/` folder
 - Get added to the shared google calendar for the lab.
 - Get added to the shared google drive of the lab.
+- Get added to the google group for emails : origami-lab@googlegroups.com
 - Attend weekly lab meetings on Tuesdays at 11:00 am in NW123 (or Zoom)
   (check in the slack for changes to place/time).
 - Before each lab meeting, fill in the meetings google doc
