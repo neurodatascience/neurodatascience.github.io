@@ -13,12 +13,12 @@ title: Lab Wiki
   - Add a picture of yourself to the `img/people/` folder
 - Get added to the shared google calendar for the lab.
 - Get added to the shared google drive of the lab.
+- Get added to the google group for emails : origami-lab@googlegroups.com
 - Attend weekly lab meetings on Tuesdays at 11:00 am in NW123 (or Zoom)
   (check in the slack for changes to place/time).
 - Before each lab meeting, fill in the meetings google doc
   with what you’ve been working on and anything you want to discuss (see Slack for link).
 - Get a compute canada account.
-- Set up your print account for the lab’s print card
 
 ## Guidelines for everyday life in the lab
 
@@ -30,4 +30,4 @@ title: Lab Wiki
 - Feel free to take snacks from the ‘snack cabinet’ (white/clear set of plastic drawers),
   and bring in snacks once in a while.
 - We try to eat lunch together around 12, and you’re welcome to join!
-  But check the #lunch channel of the slack group to see if anyone is free.
+  But check the #social channel of the slack group to see if anyone is free.
