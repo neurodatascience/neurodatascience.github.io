@@ -14,6 +14,10 @@ title: Lab Wiki
 - Get added to the shared google calendar for the lab.
 - Get added to the shared google drive of the lab.
 - Get added to the google group for emails : origami-lab@googlegroups.com
+- Email facilities.neuro@mcgill.ca (put JB in c.c.) to ask for
+  - A key for NW123
+  - A FOB for access to NW141 and the student space on L3
+- Email bicadmin@bic.mni.mcgill.ca (put JB in c.c.) for access to the Brain Imaging Centre server as part of the origami group
 - Attend weekly lab meetings on Tuesdays at 11:00 am in NW123 (or Zoom)
   (check in the slack for changes to place/time).
 - Before each lab meeting, fill in the meetings google doc
